@@ -1,0 +1,1 @@
+Workout2 is an assignment aimed to test students' understanding about writing functions, string manipulation, and test_file functions. Students can self-check the correctness of their solutions.
