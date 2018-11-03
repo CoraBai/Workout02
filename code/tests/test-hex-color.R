@@ -14,3 +14,12 @@ test_that("is_hex() works as expected", {
   expect_error(is_hex(FF00A7))
   expect_error(is_hex(TRUE))
 })
+
+test_that("is_hex_alpha() works as expected", {
+  expect_true(is_hex_alpha("#FF000078"))
+  expect_true(is_hex_alpha("#ffda0078"))
+  expect_false(is_hex_alpha("#FF0000"))
+  expect_false(is_hex_alpha("#ffda00"))
+  expect_error(is_hex_alpha(FF00A7))
+  expect_error(is_hex_alpha(TRUE))
+})
