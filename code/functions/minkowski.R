@@ -1,3 +1,10 @@
+#' @title Minkowski 
+#' @description calculate the minkowski distance between two points
+#' @param point 1 coordinates x
+#' @param point 2 coordinates y
+#' @param p exponent (part of the formula)
+#' @return minkowski distance between two points 
+
 minkowski = function(x, y, p = 1) {
   if(length(x) != length(y)) {
     stop("x and y have different lengths")

@@ -1,3 +1,7 @@
+#' @title Count Vowels
+#' @description count the number of vowels in a given string regardless of case
+#' @param string value
+#' @return number of all vowels with names
 library("stringr")
 count_vowels = function(x){
   if(!(is.character(x) && length(x) ==1)){
